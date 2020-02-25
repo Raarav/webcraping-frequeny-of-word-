@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="cyan">
+<form action="result" method="post">
+    {% csrf_token %}
+    <center>
+        <div class="search">
+            <input type="url" placeholder="Search.." name="ul" >
+            <br>
+            <button>find</button>
+        </div>
+    </center>
+    {% block content %}
+
+    {% endblock %}
+</form>
+</body>
+</html>
+
+
+
